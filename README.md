@@ -124,8 +124,13 @@ HotelManagementSystem/
 
 ## Interface Screenshots
 
-```markdown
+### Login
 ![Login](./HotelManagementSystem/screenshots/login.png)
+
+### Main Menu
 ![MainMenu](./HotelManagementSystem/screenshots/main.png)
+
+### Guest Info
 ![GuestInfo](./HotelManagementSystem/screenshots/guest.png)
+
 
