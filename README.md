@@ -64,7 +64,7 @@ The database is located in the `shujuk/` folder.
 
 
 ## Project Structure
-
+```
 HotelManagementSystem/
 │
 ├── 项目源文件（src）/
@@ -89,9 +89,9 @@ HotelManagementSystem/
 │ └── hotel_log.ldf
 │
 └── README.md
+```
 
 
----
 
 ## System Environment
 
@@ -104,13 +104,13 @@ HotelManagementSystem/
 | GUI Framework | Swing |
 | Database Access | JDBC |
 
----
+
 
 ## Default Login 
 - **Username:** `jsj161`  
 - **Password:** `123456`
 
----
+
 
 ## Technical Highlights
 - Implemented GUI using **Swing + BorderLayout + JPanel**.  
@@ -120,10 +120,9 @@ HotelManagementSystem/
 - User prompts through `JOptionPane`.  
 - Clear separation between admin and user privileges.  
 
----
+
 
 ## Interface Screenshots
-(You can include screenshots in this section.)
 
 ```markdown
 ![Login](./screenshots/login.png)
