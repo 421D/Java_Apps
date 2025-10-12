@@ -125,7 +125,7 @@ HotelManagementSystem/
 ## Interface Screenshots
 
 ```markdown
-![Login](/screenshots/login.png)
-![MainMenu](/screenshots/main.png)
-![GuestInfo](/screenshots/guest.png)
+![Login](../screenshots/login.png)
+![MainMenu](../screenshots/main.png)
+![GuestInfo](../screenshots/guest.png)
 
