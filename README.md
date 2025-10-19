@@ -2,46 +2,55 @@
 
 ## Overview
 
-A **Java-based hotel management system** built using **Swing GUI** and **SQL Server** database.  
-This project allows administrators to manage guest information, room data, supplier and purchase records, and user access with role-based control.  
-It integrates Java’s GUI frontend with JDBC backend logic to create a complete management platform.
-The system supports **CRUD operations** (Create, Read, Update, Delete) for various management modules and ensures data consistency through a relational database (Access/MySQL).
+A **Java-based hotel management system** developed with a **Swing graphical interface** and **SQL Server** backend.
+It supports full-stack operations including guest records, room data, check-in/out handling, billing, and user role management.
+The backend leverages JDBC to ensure secure, efficient database interactions, and the architecture follows modular, object-oriented principles.
+
 The system is built using a **modular, object-oriented architecture**, divided into two components:  
-- `hotelAuthServer`: authentication server  
-- `hotel`: main client application  
+- `hotelAuthServer`: Dedicated authentication server for user login
+- `hotel`: Main client application with all core functions
+
+  
+## Technical Highlights
+- Swing-based interface using BorderLayout, JPanel, and custom painting
+- All operations handled with robust JDBC logic
+- Clear user/admin role separation with tailored access
+- Drag-and-drop login window with centring logic
+- User prompts through `JOptionPane`.  
+- Background rendering via `paintComponent()`.  
 
 
 ## Core Functional Modules
 
 ### 1. Guest Information Management
-- Add, edit, delete, and search guest information.  
-- Fields include: name, gender, ID number, contact info, work unit, reserved room number, etc.  
-- Guests can view their own data; administrators can manage all guests.
+- Add, edit, delete, and search guest records
+- Fields include name, gender, ID number, contact info, work unit, room number 
+- Role-based access: guests view only personal data, admins manage all
   
 ### 2. Room Management
-- Manage hotel room information: room ID, type, phone, price, and status (available / occupied).  
-- Supports adding, updating, searching, and deleting rooms.
+- Manage hotel room data: room ID, type, phone, price, and status (available / occupied).  
+- Supports full CRUD operations
 
 ### 3. Check-in / Check-out Management
-- Handles guest check-in and check-out records.  
-- Includes deposit handling and billing calculations.  
-- Supports querying by guest name, ID number, or room number.
+- Manage guest check-in and checkout flows
+- Includes deposit tracking and automatic bill calculation
+- Searchable by guest name, ID, or room number
 
 ### 4. Dining Management
-- Records guest dining and consumption information.  
-- Tracks dishes, quantity, unit price, and total cost.  
-- Provides bill summaries for guests and administrators.
+- Records food orders and guest consumption
+- Tracks dish name, quantity, unit price, and total
+- Accessible to both guests and administrators
+
 
 ### 5. Billing Management
-- Manages deposits, total expenses, and settlement details.  
-- Automatically calculates room and dining costs.  
-- Generates final bills at checkout.
+- Consolidated tracking of deposits, charges, and settlements
+- Auto-calculation of room + dining cost
+- Generates final invoice on checkout
 
 ### 6. System Maintenance
-- Administrator login authentication.  
-- Database maintenance and reset options.  
+- Login authentication for system admins
+- Database reset and maintenance tools
 - Operation logs stored in `hotel_log.ldf`.
-
 
 
 ## Database Design
@@ -109,17 +118,6 @@ HotelManagementSystem/
 ## Default Login 
 - **Username:** `jsj161`  
 - **Password:** `123456`
-
-
-
-## Technical Highlights
-- Implemented GUI using **Swing + BorderLayout + JPanel**.  
-- Database connection via **JDBC** for CRUD operations.  
-- Movable, centred login window with drag functionality.  
-- Background rendering via `paintComponent()`.  
-- User prompts through `JOptionPane`.  
-- Clear separation between admin and user privileges.  
-
 
 
 ## Interface Screenshots
